@@ -459,8 +459,33 @@ header {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+.portfolio .project.project-bg {
+  background-image: url("../.././assets/ezgif.com-gif-maker.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.portfolio .project.project-bg-2 {
+  background-image: url("../.././assets/movieVsBook.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.portfolio .project.project-bg-3 {
+  background-image: url("../.././assets/bikerland.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .portfolio .project:hover h3, .portfolio .project:hover p, .portfolio .project:hover a {
   opacity: 1;
+}
+.portfolio .project:hover.project-bg, .portfolio .project:hover.project-bg-2, .portfolio .project:hover.project-bg-3 {
+  background-image: none;
+  background-color: rgba(207, 198, 198, 0.965);
 }
 .portfolio .project-links a {
   display: inline-block;
