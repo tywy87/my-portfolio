@@ -211,6 +211,7 @@
     h2 {
       font-family: 'Cinzel', serif;
       margin-bottom: 20px;
+      
     }
   
     .project-container {
@@ -228,6 +229,9 @@
       max-width: 100%;
       border-radius: 5%;
       height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   
       h3 {
         font-family: 'Cinzel', serif;

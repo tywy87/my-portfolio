@@ -49,6 +49,10 @@
   }
 
 @media (min-width: 613px) {
+
+    body{
+        font-size: 1.9rem;
+    }
     .intro {
         min-height: 30svh;
     }
@@ -57,6 +61,14 @@
       .skills-grid {
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+
+    .portfolio{
+        .project-links {
+            a{
+                font-size: 2rem;
+            }
+        }
     }
   }
 
@@ -92,7 +104,129 @@
             font-size: 2rem;
         }
     }
+
+    .portfolio {
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+
+    .portfolio {
+        .project {
+            height: 400px;
+        }
+    }
+
+    .about-me {
+        h2 {
+            font-size: 2.8rem;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        .text {
+            width: 45%;
+        }
+        .image-container {
+            width: 45%;
+          }
+        
+        img {
+            max-width: 100%;
+        }
+        
+    }
+
+    .contact-form {
+        textarea {
+            height: 150px;
+        }
+    }
+}
+
+@media (min-width: 895px) {
+    .portfolio .project-container .project {
+        max-width: calc(50% - 20px);
+      }
+}
+
+@media (min-width: 1025px) {
+    .nav-toggle-label {
+      display: none;
+    }
+  
+    .nav {
+      position: static;
+      height: auto;
+      width: auto;
+      background-color: transparent;
+      transform: none;
+    }
+  
+    .nav-menu {
+      display: flex;
+      justify-content: space-between;
+  
+      ul {
+        display: flex;
+        gap: 20px;
+  
+        li {
+          padding: 0;
+        }
+      }
+  
+      .email {
+        display: none;
+      }
+    }
+
+    .intro {
+        min-height: 40svh;
+
+        h2{
+            margin-top: 40px;
+        }
+    }
+
+    .tech-stack{
+        .skill{
+            width: 50%;
+        }
+    }
+
+    .about-me{
+        img{
+            max-width: 87%;
+        }
+
+    .contact-form{
+        fieldset{
+            max-width: 700px;
+        }
+
+        textarea{
+            height: 190px;
+        }
+    }
+  }}
+
+  @media (min-width:1201px) {
+    .tech-stack {
+        .skills-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    
+    .about-me{
+        img{
+            max-width: 80%;
+        }
+    }
   }
+  
 
   
   
