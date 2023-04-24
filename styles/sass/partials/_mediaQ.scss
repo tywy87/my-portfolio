@@ -1,0 +1,98 @@
+@media (min-width: 504px) {
+    .portfolio .project {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 503px) {
+    .contact-form {
+      input::-webkit-input-placeholder {
+        color: transparent;
+      }
+      input:-moz-placeholder {
+        color: transparent;
+      }
+      input::-moz-placeholder {
+        color: transparent;
+      }
+      input:-ms-input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  @media (min-width: 504px) {
+    .contact-form {
+      fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+      input[type="text"],
+      input[type="email"] {
+        width: calc(50% - 10px);
+      }
+    
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+      label {
+        display: none;
+      }
+      button{
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+
+@media (min-width: 613px) {
+    .intro {
+        min-height: 30svh;
+    }
+
+    .tech-stack {
+      .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    header {
+        height: 10svh;
+    
+    .nav-center {
+        font-size: 3.3rem;
+    }
+    .nav-toggle-label {
+        width: 50px;
+        }
+    }
+
+    .intro {
+        h2 {
+            font-size: 3.2rem;
+        }
+        p {
+            font-size: 2.2rem;
+        }
+        .resume a {
+            font-size: 2.1rem;
+        }
+    }
+
+    .tech-stack {
+        h2 {
+            font-size: 2.8rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+  }
+
+  
+  

@@ -417,11 +417,12 @@ header {
   width: 80px;
   height: auto;
   padding: 10px;
+  margin: 0 auto;
 }
 .tech-stack .skill h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .portfolio {
@@ -446,6 +447,8 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   max-width: 100%;
+  border-radius: 5%;
+  height: 300px;
 }
 .portfolio .project h3 {
   font-family: "Cinzel", serif;
@@ -606,4 +609,80 @@ footer .social-icons a img {
 }
 footer .social-icons a img:hover {
   opacity: 0.7;
+}
+
+@media (min-width: 504px) {
+  .portfolio .project {
+    height: 350px;
+  }
+}
+@media (max-width: 503px) {
+  .contact-form input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .contact-form input:-moz-placeholder {
+    color: transparent;
+  }
+  .contact-form input::-moz-placeholder {
+    color: transparent;
+  }
+  .contact-form input:-ms-input-placeholder {
+    color: transparent;
+  }
+}
+@media (min-width: 504px) {
+  .contact-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-form input[type=text],
+.contact-form input[type=email] {
+    width: calc(50% - 10px);
+  }
+  .contact-form textarea {
+    width: 100%;
+    height: 100px;
+  }
+  .contact-form label {
+    display: none;
+  }
+  .contact-form button {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 613px) {
+  .intro {
+    min-height: 30svh;
+  }
+  .tech-stack .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 769px) {
+  header {
+    height: 10svh;
+  }
+  header .nav-center {
+    font-size: 3.3rem;
+  }
+  header .nav-toggle-label {
+    width: 50px;
+  }
+  .intro h2 {
+    font-size: 3.2rem;
+  }
+  .intro p {
+    font-size: 2.2rem;
+  }
+  .intro .resume a {
+    font-size: 2.1rem;
+  }
+  .tech-stack h2 {
+    font-size: 2.8rem;
+  }
+  .tech-stack p {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

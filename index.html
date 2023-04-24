@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Wyles</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
     <!-- SCSS Style -->
     <link rel="stylesheet" href="./styles/sass/style.css">
     <!-- Google Fonts -->
@@ -25,13 +24,13 @@
             <span></span>
             <span></span>
         </label>
-        <nav class="nav">
+        <nav class="nav" onclick="closeNav(event)">
             <div class="nav-menu">
                 <ul>
                     <li><a href="https://www.github.com/tywy87">Github</a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank" lang="en">Linkedin</a></li>
-                    <li><a href="https://www.youtube.com" target="_blank">Loom</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/tylerwyles/" target="_blank" lang="en">Linkedin</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
                 </ul>
                 <p class="email"><a href="mailto:tylerwyles@gmail.com">tylerwyles@gmail.com</a></p>
             </div>
@@ -170,10 +169,10 @@
         <fieldset>
           <legend>Contact Me</legend>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" placeholder="Name" required>
         
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
         
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
@@ -198,5 +197,16 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function closeNav(event) {
+        const navToggle = document.getElementById("nav-toggle");
+
+    if (event.target === event.currentTarget) {
+        navToggle.checked = false;
+        }
+    }
+  </script>
+
 </body>
 </html>
