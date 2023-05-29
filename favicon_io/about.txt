@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Sigmar
+- Font Author: Copyright 2011 The Sigmar One Project Authors (https://github.com/googlefonts/sigmarone)
+- Font Source: http://fonts.gstatic.com/s/sigmar/v2/hv-XlzJgIE8a85pUbWY3MTFgVg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

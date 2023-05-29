@@ -409,7 +409,8 @@ header {
 }
 .tech-stack .skill {
   background-color: #eff0f3;
-  box-shadow: 4px 3px 2px;
+  box-shadow: 1px 1px 1px;
+  border: 1px solid black;
   width: 68%;
   border-radius: 10%;
 }
@@ -423,6 +424,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   margin-top: 5px;
+  padding: 0px 0px 6px 0px;
 }
 
 .portfolio {
